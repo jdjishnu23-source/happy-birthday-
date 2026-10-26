@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cursive: "Dancing Script", cursive;
+  --font-handwriting: "Caveat", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Outfit", sans-serif;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(251, 146, 60, 0.9));
+  }
+  50% {
+    transform: scale(1.1) rotate(1.5deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(249, 115, 22, 1));
+  }
+}
+
+@keyframes pulseHeart {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 3.5s ease-in-out infinite;
+}
+
+.animate-flicker {
+  animation: flicker 0.4s ease-in-out infinite alternate;
+}
+
+.animate-pulse-heart {
+  animation: pulseHeart 1.8s ease-in-out infinite;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 114, 182, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 114, 182, 0.7);
+}

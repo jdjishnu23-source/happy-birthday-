@@ -1,0 +1,6 @@
+{
+  "name": "Happy Birthday AKKA - Interactive Celebration",
+  "description": "A heartfelt interactive birthday experience for Akka with secret passcode, balloon pop, candle blow, bouquet, emotional letter, and surprise gifts.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
